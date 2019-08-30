@@ -12,8 +12,8 @@ class SessionsController < ApplicationController
 
   def destroy
     user = User.find(params[:id])
-    session.delte(:user_id)
-    redirect_to root_url
+    session.delete(:user_id)
+    redirect_to root_url, notice: "ログアウトしました。"
   end
 
   def new;end

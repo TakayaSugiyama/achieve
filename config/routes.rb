@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get "login" , to: "sessions#new"
   post "login", to: "sessions#create"
-  delete "login", to: "sessions#destroy"
+  delete "logout/:id", to: "sessions#destroy", as: "logout"
   resources :users, except: [:index,:new]
   get "signup" ,to: "users#new"
   root "home#index"
