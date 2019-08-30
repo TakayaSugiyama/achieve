@@ -212,6 +212,9 @@ ja:
         email: メールアドレス
         password: パスワード
         password_confirmation: パスワード(確認)
+      picture: 
+        image: 画像
+        description: 一言
 
 
 
