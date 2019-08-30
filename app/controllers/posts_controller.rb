@@ -21,6 +21,12 @@ class PostsController < ApplicationController
     @post = Picture.find(params[:id])
   end
 
+  def destroy 
+    @post = Picture.find(params[:id])
+    @post.destroy
+    redirect_to posts_url, notice: "投稿を削除しました。"
+  end
+
   private 
 
   def picture_params 
