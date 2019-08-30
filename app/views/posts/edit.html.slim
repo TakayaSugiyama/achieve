@@ -1,0 +1,11 @@
+h1.text-center.mt-3.mb-4 投稿編集
+= render "layouts/errors"
+= form_with(model: @post,local: true,url: post_path(@post.id)) do |f|
+  .form-group 
+    =f.label :image, "画像"
+    =f.file_field :image
+  .form-group 
+    =f.label :description,"なにか一言 !"
+    =f.text_area :description, class: "form-control col-7",placeholder: "50文字以内で投稿してください"
+  .text-center.mt-3.mb-3.col-7
+    =f.submit "更新する",class: "btn btn-primary" 
