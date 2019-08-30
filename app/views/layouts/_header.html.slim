@@ -1,5 +1,8 @@
 nav.navbar.navbar-expand-lg.navbar-primary.bg-primary
   = link_to "FaceBookClone", root_path, class: "navbar-brand"
+  = link_to "投稿一覧", posts_path, class: "nav-link"
   - if login?
     = link_to "マイページ", user_path(@current_user.id),class: "nav-link"
-    = link_to "ログアウト", logout_path(@current_user.id),method: :delete, class: "nav-link"
+    = link_to "新規投稿",new_post_path, class: "nav-link"
+    = link_to "ログアウト", logout_path(@current_user.id),method: :delete, class: "nav-link",data: {confirm: "ログアウトしますか?"}
+
