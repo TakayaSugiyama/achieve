@@ -17,6 +17,10 @@ class PostsController < ApplicationController
     @posts = Picture.all.order(updated_at: :desc)
   end
 
+  def show 
+    @post = Picture.find(params[:id])
+  end
+
   private 
 
   def picture_params 

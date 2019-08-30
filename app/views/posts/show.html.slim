@@ -1,0 +1,9 @@
+h1.text-center.mb-3.mt-3  投稿詳細
+.card.text-center.mb-4
+  .card-body
+      =image_tag @post.image.thumb.url
+      p.mt-4 = @post.description
+  .card-footer 
+      =@post.created_at
+      
+      
