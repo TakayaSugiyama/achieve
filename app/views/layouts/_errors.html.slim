@@ -1,0 +1,7 @@
+- if flash[:error_messages]
+  .card.mb-3
+    .card-header.bg-info
+      p.text-white エラーがあります。確認してください。
+    .card-body 
+      - flash[:error_messages].each do |msg|
+        p =msg
