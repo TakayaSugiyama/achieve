@@ -3,15 +3,15 @@
 = form_with model: @user, local: true do |f|
   .form-group.col-6
     =f.label :name, "名前"
-    =f.text_field :name , class: "form-control",placeholder: "リラックマ"
+    =f.text_field :name , class: "form-control",placeholder: "3文字以上15文字以下"
   .form-group.col-6
     =f.label :email, "メールアドレス"
     =f.text_field :email , class: "form-control",placeholder: "relaxbear@gmil.com"
   .form-group.col-6
     =f.label :password, "パスワード"
-    =f.password_field :password , class: "form-control"
+    =f.password_field :password , class: "form-control",placeholder: "5文字以上"
   .form-group.col-6
     =f.label :password_confirmation, "パスワード(確認)"
-    =f.password_field :password_confirmation, class: "form-control"
+    =f.password_field :password_confirmation, class: "form-control",placeholder: "5文字以上"
   .text-center.col-6.mb-4
     = f.submit "登録する", class: "btn btn-primary"
