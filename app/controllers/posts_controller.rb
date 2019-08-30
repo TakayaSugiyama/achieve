@@ -13,6 +13,10 @@ class PostsController < ApplicationController
     end
   end
 
+  def index 
+    @posts = Picture.all.order(updated_at: :desc)
+  end
+
   private 
 
   def picture_params 
