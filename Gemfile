@@ -22,8 +22,6 @@ gem 'fog-aws'
 gem 'dotenv-rails' 
 gem 'unicorn' # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要
-gem 'sassc-rails'
-gem "sassc"
 
 
 group :development, :test do
