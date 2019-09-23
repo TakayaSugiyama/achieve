@@ -22,8 +22,8 @@ gem 'fog-aws'
 gem 'dotenv-rails' 
 gem 'unicorn' # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要
-gem 'ed25519'
-gem 'bcrypt_pbkdf'
+
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -34,11 +34,6 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
-  gem 'capistrano', '3.6.0' # capistranoのツール一式
-  gem 'capistrano-bundler'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
-  gem 'capistrano3-unicorn'
 end
 
 group :development do
@@ -47,6 +42,13 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails'
+  gem 'ed25519'
+  gem 'bcrypt_pbkdf'
+  gem 'capistrano', '3.6.0' # capistranoのツール一式
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
 group :test do
