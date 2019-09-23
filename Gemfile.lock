@@ -336,7 +336,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bcrypt_pbkdf
   bootsnap
-  bootstrap (= 4.3.1)
+  bootstrap
   byebug
   capistrano (= 3.6.0)
   capistrano-bundler
@@ -367,7 +367,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sassc
-  sassc-rails (= 2.1.2)
+  sassc-rails
   selenium-webdriver
   slim-rails
   spring
