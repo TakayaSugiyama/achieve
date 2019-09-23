@@ -366,7 +366,7 @@ DEPENDENCIES
   rails (~> 5.2.3)
   rspec-rails
   sass-rails (~> 5.0)
-  sassc-rails (= 2.1.2)
+  sassc-rails
   selenium-webdriver
   slim-rails
   spring
