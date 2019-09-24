@@ -11,8 +11,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
-gem 'bootstrap'
-gem 'jquery-rails'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'bcrypt', '~> 3.1.7'
@@ -22,8 +20,6 @@ gem 'fog-aws'
 gem 'dotenv-rails' 
 gem 'unicorn' # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要
-gem 'sassc-rails'
-gem 'sassc', '~> 2.2', '>= 2.2.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
